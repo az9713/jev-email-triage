@@ -1,5 +1,5 @@
 {
-  "name": "email-triage",
+  "name": "jev-email-triage",
   "version": "1.0.0",
   "description": "Email triage with Jev (TypeSafe) over the Vercel AI Gateway",
   "type": "module",

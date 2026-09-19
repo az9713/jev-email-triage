@@ -4,7 +4,7 @@ A small script that runs [Jev](https://docs.typesafe.ai/introduction), TypeSafe'
 
 Inspired by Riley Brown's video [*Jev: the model that can't write*](https://www.youtube.com/watch?v=o1CogAtWdBk), where he triages his inbox with Jev. This repo is that idea, run over 90 days of a real inbox and documented step by step with Claude Code. The companion repo [jev-model-router](https://github.com/az9713/jev-model-router) uses Jev to pick which LLM answers a chat message.
 
-- **Development journey:** https://az9713.github.io/email-triage/ — how the mail was fetched, the four questions, every input and output file (redacted), four mis-ranks and their causes, and 17 unknown unknowns.
+- **Development journey:** https://az9713.github.io/jev-email-triage/ — how the mail was fetched, the four questions, every input and output file (redacted), four mis-ranks and their causes, and 17 unknown unknowns.
 
 ## How it works
 
