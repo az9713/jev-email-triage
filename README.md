@@ -29,10 +29,12 @@ Needs Node 20.6 or later and a Vercel AI Gateway key on the paid tier. The free 
 ```
 npm install
 echo AI_GATEWAY_API_KEY=your_key > .env
-node --env-file=.env triage.mjs emails.json [--limit N] [--raw]
+node --env-file=.env triage.mjs emails.json [--limit N] [--raw] [--resume]
 ```
 
-`--limit N` runs the first N records and does not write the output file. `--raw` prints the full answer and metadata for each call before the table.
+Full runs checkpoint to a separate partial file after every email and replace the final output only after completion. `--resume` continues an interrupted full run. `--limit N` runs the first N records without writing output. `--raw` prints each full answer and metadata.
+
+`npm test` runs the free deterministic checks and the held-out evaluation contract. `npm run eval:live` runs the same 12 cases against Jev and saves JSONL results under `eval/`.
 
 The 41 emails from the journey came from the Gmail MCP `search_threads` tool: INBOX, last 90 days, snippets only. They are not in this repo.
 

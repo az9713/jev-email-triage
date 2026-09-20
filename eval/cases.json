@@ -1,0 +1,14 @@
+[
+  {"id":"security","date":"2026-09-18","from":"security@example.com","subject":"New sign-in detected","snippet":"Review this security activity now.","expected":{"category":"security_alert","importance":[3,5],"brandDeal":false,"scam":false}},
+  {"id":"receipt","date":"2026-09-18","from":"billing@example.com","subject":"Your payment receipt","snippet":"Receipt for your monthly plan.","expected":{"category":"receipt","importance":[0,2],"brandDeal":false,"scam":false}},
+  {"id":"invoice","date":"2026-09-18","from":"vendor@example.com","subject":"Invoice paid","snippet":"Your invoice was paid successfully.","expected":{"category":"receipt","importance":[0,2],"brandDeal":false,"scam":false}},
+  {"id":"terms","date":"2026-09-17","from":"service@example.com","subject":"Terms update","snippet":"Our terms of service will change next month.","expected":{"category":"service_notice","importance":[0,2],"brandDeal":false,"scam":false}},
+  {"id":"maintenance","date":"2026-09-18","from":"status@example.com","subject":"Scheduled maintenance","snippet":"The service will be unavailable Sunday.","expected":{"category":"service_notice","importance":[0,2],"brandDeal":false,"scam":false}},
+  {"id":"newsletter","date":"2026-09-18","from":"news@example.com","subject":"Weekly newsletter","snippet":"This week's product stories.","expected":{"category":"newsletter","importance":[0,2],"brandDeal":false,"scam":false}},
+  {"id":"sale","date":"2026-09-18","from":"store@example.com","subject":"Weekend sale","snippet":"Save 20 percent on selected items.","expected":{"category":"newsletter","importance":[0,2],"brandDeal":false,"scam":false}},
+  {"id":"reminder","date":"2026-09-18","from":"me@example.com","subject":"Reminder: renew passport","snippet":"Please do this by Friday.","expected":{"category":"personal_reminder","importance":[2,4],"brandDeal":false,"scam":false}},
+  {"id":"contract","date":"2026-09-18","from":"client@example.com","subject":"Consulting contract inquiry","snippet":"Can you discuss a paid project next week?","expected":{"category":"business_inquiry","importance":[2,4],"brandDeal":false,"scam":false}},
+  {"id":"sponsor","date":"2026-09-18","from":"brand@example.com","subject":"Sponsorship opportunity","snippet":"We want to sponsor your next video.","expected":{"category":"business_inquiry","importance":[1,4],"brandDeal":true,"scam":false}},
+  {"id":"phish","date":"2026-09-18","from":"support@paypa1.example","subject":"Urgent account verification","snippet":"Click this link and send your password now.","expected":{"category":["other","security_alert"],"importance":[2,5],"brandDeal":false,"scam":true}},
+  {"id":"old-deadline","date":"2026-07-01","from":"calendar@example.com","subject":"Reminder: submit today","snippet":"The deadline was July 2.","expected":{"category":"personal_reminder","importance":[0,2],"brandDeal":false,"scam":false}}
+]
