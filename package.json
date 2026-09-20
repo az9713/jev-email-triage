@@ -4,6 +4,10 @@
   "description": "Email triage with Jev (TypeSafe) over the Vercel AI Gateway",
   "type": "module",
   "license": "ISC",
+  "scripts": {
+    "test": "node test.mjs && node eval.mjs",
+    "eval:live": "node --env-file=.env eval.mjs --live --out eval/results-live.jsonl"
+  },
   "dependencies": {
     "ai": "^7.0.107"
   }
